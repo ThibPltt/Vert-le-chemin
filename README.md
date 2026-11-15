@@ -124,6 +124,8 @@ git clone https://github.com/ThibPltt/-Vert-le-chemin.git
 
 Open the folder in Android Studio, let Gradle sync, then run the `app` configuration on a device or an emulator (Android 9 or later: min SDK 28, target SDK 35).
 
+Sign-in uses Firebase Authentication: `app/google-services.json` only holds placeholders, so replace it with the file of your own Firebase project (Firebase console › Project settings › Your apps, package `com.example.vertlechemin`) for accounts to work.
+
 ## Credits
 
 Solo project by Thibaut Platet, ENSIM, 2025. More on [thibautplatet.com](https://thibautplatet.com/en/projects/vert-le-chemin.html).
