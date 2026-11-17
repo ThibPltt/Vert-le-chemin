@@ -131,7 +131,7 @@ Tests and build from the command line (JDK 17):
 ./gradlew assembleDebug       # app/build/outputs/apk/debug/
 ```
 
-The same steps run on GitHub Actions at every push ([`.github/workflows/android.yml`](.github/workflows/android.yml)); the debug APK is attached to each run.
+The same steps run on GitHub Actions ([`.github/workflows/android.yml`](.github/workflows/android.yml), *Actions › Android build › Run workflow*); the debug APK is attached to each run.
 
 Sign-in uses Firebase Authentication: `app/google-services.json` only holds placeholders, so replace it with the file of your own Firebase project (Firebase console › Project settings › Your apps, package `com.thibautplatet.vertlechemin`) for accounts to work.
 

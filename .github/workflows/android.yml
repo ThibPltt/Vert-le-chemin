@@ -1,9 +1,8 @@
 name: Android build
 
+# Started by hand for now (Actions tab › Android build › Run workflow).
+# To build at every push, add back:  push: { branches: [main] }
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_dispatch:
 
 jobs:
