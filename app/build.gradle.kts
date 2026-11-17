@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.vertlechemin"
+    namespace = "com.thibautplatet.vertlechemin"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.vertlechemin"
+        applicationId = "com.thibautplatet.vertlechemin"
         minSdk = 28
         targetSdk = 35
         versionCode = 1

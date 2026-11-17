@@ -80,7 +80,7 @@ Kotlin with Jetpack Compose (Material 3), on an MVVM architecture, with Hilt for
 | **Settings** | Personal information, notifications, language, data deletion, sign-out. |
 | **Menu** | A bar at the bottom of every screen: trip, favourites, settings. |
 
-The code lives in `app/src/main/java/com/example/vertlechemin/`: screens under `ui/theme/screen/` (`login`, `register`, `home`, `trajet`, `favoris`, `parameters`), the Valhalla client under `screen/login/trajet/Valhalla/`, navigation in `NavGraph.kt`, dependency injection in `di/Appmodule.kt`.
+The code lives in `app/src/main/java/com/thibautplatet/vertlechemin/`: screens under `ui/theme/screen/` (`login`, `register`, `home`, `trajet`, `favoris`, `parameters`), the Valhalla client under `screen/login/trajet/Valhalla/`, navigation in `NavGraph.kt`, dependency injection in `di/Appmodule.kt`.
 
 ## Interface choices
 
@@ -124,11 +124,24 @@ git clone https://github.com/ThibPltt/-Vert-le-chemin.git
 
 Open the folder in Android Studio, let Gradle sync, then run the `app` configuration on a device or an emulator (Android 9 or later: min SDK 28, target SDK 35).
 
-Sign-in uses Firebase Authentication: `app/google-services.json` only holds placeholders, so replace it with the file of your own Firebase project (Firebase console › Project settings › Your apps, package `com.example.vertlechemin`) for accounts to work.
+Tests and build from the command line (JDK 17):
+
+```bash
+./gradlew testDebugUnitTest   # form validation rules
+./gradlew assembleDebug       # app/build/outputs/apk/debug/
+```
+
+The same steps run on GitHub Actions at every push ([`.github/workflows/android.yml`](.github/workflows/android.yml)); the debug APK is attached to each run.
+
+Sign-in uses Firebase Authentication: `app/google-services.json` only holds placeholders, so replace it with the file of your own Firebase project (Firebase console › Project settings › Your apps, package `com.thibautplatet.vertlechemin`) for accounts to work.
 
 ## Credits
 
 Solo project by Thibaut Platet, ENSIM, 2025. More on [thibautplatet.com](https://thibautplatet.com/en/projects/vert-le-chemin.html).
+
+## Licence
+
+Released under the [MIT licence](LICENSE).
 
 <details>
 <summary>🇫🇷 En bref</summary>
