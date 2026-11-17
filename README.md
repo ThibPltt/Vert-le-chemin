@@ -119,7 +119,7 @@ The schedule, then how the app works: a task tree and two diagrams (figures in F
 ## Run it
 
 ```bash
-git clone https://github.com/ThibPltt/-Vert-le-chemin.git
+git clone https://github.com/ThibPltt/Vert-le-chemin.git
 ```
 
 Open the folder in Android Studio, let Gradle sync, then run the `app` configuration on a device or an emulator (Android 9 or later: min SDK 28, target SDK 35).
